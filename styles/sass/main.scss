@@ -3,15 +3,104 @@ body, html {
     margin: 0;
 }
 
-.cover { 
-    /* The image used */
-    background-image: url("../../images/img_parallax.jpg");
+/*** Hero Cover ***/
+.cover {
+  background-image: url("../../images/cover.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
-    /* Full height */
-    height: 100%; 
+/*** Hero Cover Text ***/
+.cover-txt {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/*** Hero Cover Button ***/
+.cover-txt button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px 40px;
+  color: white;
+  background-color: #555;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cover-txt button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*** Main Content ***/
+.main {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/*** Main Content Wrapper ***/
+.wrapper {
+    margin: 0 2em;
+}
+
+
+/*** Footer ***/
+footer {
+    min-height: 225.5px;
+    background-color: #0d0d0d;
+    color: #f3f3f3;
+    clear: both;
+    position: relative;
+    z-index: 2;
+}
+
+
+/*** Navigation ***/
+nav {
+    text-align: center;
+    position: fixed;
+    width: 10%;
+    padding: 0;
+    background: #B69C87;
+    bottom: 0;
+    z-index: 100;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: block;
+    width: 100%;
+}
+
+ul li a {
+    display: block;
+    width: 100%;
+    padding: 1em 0
+}
+
+ul li a:link, ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: white !important;
+    background: #3D3332;
+}
+
+ul li a.current {
+    background: #3D3332;
 }
