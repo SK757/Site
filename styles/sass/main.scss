@@ -67,40 +67,106 @@ footer {
 /*** Navigation ***/
 nav {
     text-align: center;
-    position: fixed;
-    width: 10%;
     padding: 0;
     background: #B69C87;
-    bottom: 0;
     z-index: 100;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 ul li {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    float: left;
 }
 
 ul li a {
+    float: left;
     display: block;
-    width: 100%;
-    padding: 1em 0
-}
-
-ul li a:link, ul li a:visited {
-    color: white;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 }
 
-ul li a:hover {
-    color: white !important;
-    background: #3D3332;
-}
 
-ul li a.current {
-    background: #3D3332;
+// ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//     background-color: #333;
+//     position: fixed;
+//     bottom: 0;
+//     width: 100%;
+// }
+
+// li {
+//     float: left;
+// }
+
+// li a {
+//     display: block;
+//     color: white;
+//     text-align: center;
+//     padding: 14px 16px;
+//     text-decoration: none;
+// }
+
+// li a:hover:not(.active) {
+//     background-color: #111;
+// }
+
+// .active {
+//     background-color: #4CAF50;
+// }
+@media only screen and (min-width: 1177px) {
+    nav {
+        display: block;
+        text-align: center;
+        position: fixed;
+        width: 10%;
+        padding: 0;
+        background: #B69C87;
+        bottom: 0;
+        z-index: 100;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul li {
+        display: block;
+        width: 100%;
+    }
+
+    ul li a {
+        display: block;
+        width: 100%;
+        padding: 1em 0;
+    }
+
+    ul li a:link, ul li a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        color: white !important;
+        background: #3D3332;
+    }
+
+    ul li a.current {
+        background: #3D3332;
+    }
 }
