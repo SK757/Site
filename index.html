@@ -4,15 +4,22 @@
 	<title>Sean Kirk &#124; Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
 </head>
 <body>
-	<section class="cover">
+	<section class="cover cover-large" id="cover">
+		<!-- <i class="fa fa-arrow-circle-down"></i>
+		<i class="fa fa-circle" aria-hidden="true"></i> -->
+		<a href="javascript:" id="move-down">
+			<i class="fa fa-chevron-down"></i>
+		</a>
 		<div class="cover-txt">
-		    <h1>Sean Kirk</h1>
-		    <p>Web Design &amp; Development Graduate</p>
-		    <button type="button" class="goto">More Information</button>
+		    <h1 style="font-size:5em;margin:20px;font-family:'Economica',sans-serif;">Sean Kirk</h1>
+		    <p style="font-size:2em;margin:0;font-family:'Economica',sans-serif;">BSc (Hons) Web Design &amp; Development Graduate</p>
 	  	</div>
 	</section>
 
@@ -37,7 +44,7 @@
 
 	<footer></footer>
 
-	<nav class="nav">
+	<nav>
 		<ul>
 			<li><a class="current" href="/">Home</a></li>
 			<li><a href="/">About Me</a></li>
@@ -46,7 +53,13 @@
 		</ul>
 	</nav>
 
+	
+	<a href="javascript:" id="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+
 	<script src="js/dev/javascript.js"></script>
+
 
 </body>
 </html>

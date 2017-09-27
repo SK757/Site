@@ -21,7 +21,7 @@ gulp.task('html', function() {
 
 // Compile sass  into css and compress it
 gulp.task('sass', function() {
-    return gulp.src('styles/sass/main.scss')
+    return gulp.src('styles/sass/*.scss')
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('styles/css'))
 		.pipe(connect.reload());
