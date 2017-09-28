@@ -1,13 +1,7 @@
-// $(".fa-arrow-circle-down").click(function() {
-//     $('html,body').animate({
-//         scrollTop: $(".main").offset().top},
-//         350);
-// });
-
 // ===== Scroll to Main ==== 
 $("#move-down").click(function() {
     $('html,body').animate({
-        scrollTop: $(".main h1").offset().top},
+        scrollTop: $(".main").offset().top},
         350);
 });
 
