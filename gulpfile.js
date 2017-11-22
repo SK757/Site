@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 // Compress html
 gulp.task('html', function() {
 	return gulp.src('*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({collapseWhitespace: false}))
     .pipe(htmlmin({removeComments: true}))
     .pipe(gulp.dest('html'))
 	.pipe(connect.reload());

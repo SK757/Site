@@ -23,12 +23,14 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 var userAgent = navigator.userAgent.toLowerCase(); 
 	if (userAgent .indexOf('safari')!=-1){
 		if(userAgent .indexOf('chrome')  > -1){
-			$(".cover-large").css("height", "100%");
-			$(".cover").css("height", "93.319%");
+			$(".cover-large").css("height", "100vh");
+            // $(".cover").css("height", "93.469%");
+			$(".cover").css("height", "95vh");
 		} else if((userAgent .indexOf('opera')  > -1)||(userAgent .indexOf('opr')  > -1)){
 			//browser is opera 
 		} else {
 			$(".cover-large").css("height", "100%");
-			$(".cover").css("height", "93.697%");
+			$(".cover").css("height", "94.5vh");
+            $("#move-down").css("bottom", "120px");
        	}
     }
