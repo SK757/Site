@@ -25,11 +25,11 @@ var userAgent = navigator.userAgent.toLowerCase();
 		if(userAgent .indexOf('chrome')  > -1){
 			$(".cover-large").css("height", "100vh");
             // $(".cover").css("height", "93.469%");
-			$(".cover").css("height", "95vh");
+			$(".cover").css("height", "95.5vh");
 		} else if((userAgent .indexOf('opera')  > -1)||(userAgent .indexOf('opr')  > -1)){
-			//browser is opera 
+			//browser is opera
 		} else {
-			$(".cover-large").css("height", "100%");
+			$(".cover-large").css("height", "100vh");
 			$(".cover").css("height", "94.5vh");
             $("#move-down").css("bottom", "120px");
        	}

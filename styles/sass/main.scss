@@ -7,7 +7,7 @@ body, html {
 .cover {
     background-image: url("../../images/cover2.jpg?v=0.2");
     // height: 93.469%;
-    height: 94vh;
+    height: 95vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,6 +95,27 @@ h1 {
     -webkit-margin-before: 0;
 }
 
+/*** To Top ***/
+#topMobile a:link, #topMobile a:visited {
+    text-decoration: none;
+    color: #fff
+}
+#topMobile a, #topMobile span {
+    white-space: nowrap;
+}
+.return-to-top-mobile {
+    background: #B69C87;
+}
+.return-to-top-mobile-text {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    line-height: 19px;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #fff;
+    font-size: 1.05em;
+}
+
 
 /*** Footer ***/
 footer {
@@ -123,7 +144,6 @@ _:-ms-lang(x), footer {
 @-moz-document url-prefix() {
     footer {
         min-height: 202.067px;
-        margin-bottom: 25.558px
     }
 }
 
@@ -228,13 +248,17 @@ ul li a.current {
 }
 
 /** Dektop **/
-@media only screen and (min-width: 1177px) {
+@media only screen and (min-width: 900px) {
     .cover-large {
-        height: 100% !important;
+        height: 100vh !important;
     }
 
     #move-down {
         bottom: 30px !important;
+    }
+
+    #topMobile {
+        display: none;
     }
 
     footer {
