@@ -98,10 +98,11 @@ h1 {
 /*** To Top ***/
 #topMobile a:link, #topMobile a:visited {
     text-decoration: none;
-    color: #fff
+    color: #fff;
 }
 #topMobile a, #topMobile span {
     white-space: nowrap;
+    cursor: pointer;
 }
 .return-to-top-mobile {
     background: #B69C87;
@@ -257,6 +258,10 @@ ul li a.current {
         bottom: 30px !important;
     }
 
+    .wrapper {
+        max-width: 800px;
+    }
+
     #topMobile {
         display: none;
     }
@@ -320,5 +325,19 @@ ul li a.current {
     #return-to-top:hover i {
         color: #fff;
         top: 5px;
+    }
+}
+
+/** Dektop **/
+@media only screen and (min-width: 901px) {
+    .wrapper {
+        max-width: 77%;
+    }
+}
+
+/** Dektop **/
+@media only screen and (min-width: 1140px) {
+    .wrapper {
+        max-width: 900px
     }
 }

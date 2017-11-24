@@ -5,7 +5,7 @@ $("#move-down").click(function() {
         350);
 });
 
-// ===== Scroll to Top ==== 
+// ===== Scroll to Top Button ==== 
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 100px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
@@ -13,11 +13,13 @@ $(window).scroll(function() {
         $('#return-to-top').fadeOut(100);   // Else fade out the arrow
     }
 });
-$('#return-to-top').click(function() {      // When arrow is clicked
+
+// ===== Scroll to Top Desktop/Mobile ====  
+$('#return-to-top-mobile, #return-to-top').click(function() {      // When arrow is clicked
     $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
     }, 350);
-});
+}); 
 
 // ===== Detect Browser ====
 var userAgent = navigator.userAgent.toLowerCase(); 
