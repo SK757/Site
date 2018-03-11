@@ -1,1 +1,2 @@
-# Site
+# Portfolio Site
+# Author - Sean Kirk
